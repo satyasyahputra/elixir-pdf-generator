@@ -2,14 +2,14 @@ defmodule PdfGenerator.Mixfile do
   use Mix.Project
 
   @source_url "https://github.com/gutschilla/elixir-pdf-generator"
-  @version "0.6.2"
+  @version "0.6.3"
 
   def project do
     [
       app: :pdf_generator,
       name: "PDF Generator",
       version: @version,
-      elixir: ">= 1.1.0",
+      elixir: ">= 1.5.0",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
